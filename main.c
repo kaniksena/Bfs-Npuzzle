@@ -124,16 +124,14 @@ struct queue {
 };
 
 
-// Check if the queue is empty
+
 int isEmpty(struct queue* q) {
   if (q->rear == -1)
     return 1;
   else
     return 0;
 }
-//adding arr in queue
 
-// Adding elements into queue
 void enqueue(struct queue* q, int value) {
   if (q->rear == 10000 - 1)
     printf("\nQueue is Full!!");
@@ -145,7 +143,7 @@ void enqueue(struct queue* q, int value) {
   }
 }
 
-// Removing elements from queue
+
 int dequeue(struct queue* q) {
   int item;
   if (isEmpty(q)) {
@@ -159,7 +157,7 @@ int dequeue(struct queue* q) {
   return item;
 }
 
-// Print the queue
+
 void printQueue(struct queue* q) {
   int i = q->front;
 
@@ -173,7 +171,7 @@ void printQueue(struct queue* q) {
     }
   }
 }
-//print arrqueue
+
 void printQueueArr(struct queue* q,int range) {
   int i = q->front;
    
@@ -280,7 +278,7 @@ void bfs(int initial[],int goal[],int x,struct queue *q,struct queue *q1,int arr
         printArray(goal, range);
             printf("\nkontrol: %d",kontrol);
                     if(kontrol==range){
-                        printf("\n\n\narrlar eşit aq \n\n\n");
+                        printf("\n\n\narrlar eşit  \n\n\n");
                         for(int m=0; m<range;m++){
                             arr[m]=tempList[m];
                            
@@ -366,7 +364,7 @@ void bfs(int initial[],int goal[],int x,struct queue *q,struct queue *q1,int arr
             
         }
     else{
- printf("\n\n\narrlar eşit aq \n\n\n");
+ printf("\n\n\narrlar eşit  \n\n\n");
     for(int m=0; m<range;m++){
         arr[m]=tempList[m];
         printf("Hedef:");
